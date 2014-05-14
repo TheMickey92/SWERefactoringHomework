@@ -1,3 +1,5 @@
+package swerefactoringhomework;
+
 class Rental {
     private Movie movie;
     private int daysRented;
