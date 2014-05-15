@@ -22,4 +22,15 @@ public class NewReleasePrice extends Price
         double result = daysRented * 3;
         return result;
     }
+    
+    @Override
+    public int getFrequentRenterPoints(int daysRented)
+    {
+        int frequentRenterPoints = 1;
+        if (daysRented > 1)
+        {
+            frequentRenterPoints++;
+        }
+        return frequentRenterPoints;
+    }
 }
